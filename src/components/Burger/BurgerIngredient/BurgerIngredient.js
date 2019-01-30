@@ -8,7 +8,7 @@ class BurgerIngredient extends Component {
     render (){
         
         let ingredient = null;
-
+            // eslint-disable-next-line
         switch(this.props.type){
             case('bread-bottom'):
                 ingredient = (
