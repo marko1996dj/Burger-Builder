@@ -1,0 +1,75 @@
+83906f05a1fcf0a038f54f84f032184d
+"use strict";
+
+var _interopRequireDefault = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BuildControlsModule = _interopRequireDefault(require("./BuildControls.module.scss"));
+
+var _BuildControl = _interopRequireDefault(require("./BuildControl/BuildControl"));
+
+var _jsxFileName = "/home/etontest/burger-builder/src/components/Burger/BuildControls/BuildControls.js";
+const controls = [{
+  label: 'Salad',
+  type: 'salad'
+}, {
+  label: 'Bacon',
+  type: 'bacon'
+}, {
+  label: 'Cheese',
+  type: 'cheese'
+}, {
+  label: 'Meat',
+  type: 'meat'
+}];
+
+const buildControls = props => _react.default.createElement("div", {
+  className: _BuildControlsModule.default.BuildControls,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: void 0
+}, _react.default.createElement("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: void 0
+}, "Current Price: ", _react.default.createElement("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: void 0
+}, props.price.toFixed(2), "$")), controls.map(ctrl => _react.default.createElement(_BuildControl.default, {
+  added: () => props.ingredientAdded(ctrl.type),
+  removed: () => props.ingredientRemove(ctrl.type),
+  disabled: props.disabled[ctrl.type],
+  key: ctrl.label,
+  label: ctrl.label,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: void 0
+})), _react.default.createElement("button", {
+  className: _BuildControlsModule.default.OrderButton,
+  disabled: !props.purchasable,
+  onClick: props.order,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: void 0
+}, "ORDER NOW"));
+
+var _default = buildControls;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1aWxkQ29udHJvbHMuanMiXSwibmFtZXMiOlsiY29udHJvbHMiLCJsYWJlbCIsInR5cGUiLCJidWlsZENvbnRyb2xzIiwicHJvcHMiLCJjbGFzc2VzIiwiQnVpbGRDb250cm9scyIsInByaWNlIiwidG9GaXhlZCIsIm1hcCIsImN0cmwiLCJpbmdyZWRpZW50QWRkZWQiLCJpbmdyZWRpZW50UmVtb3ZlIiwiZGlzYWJsZWQiLCJPcmRlckJ1dHRvbiIsInB1cmNoYXNhYmxlIiwib3JkZXIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOzs7QUFFQSxNQUFNQSxRQUFRLEdBQUcsQ0FDYjtBQUFFQyxFQUFBQSxLQUFLLEVBQUUsT0FBVDtBQUFrQkMsRUFBQUEsSUFBSSxFQUFFO0FBQXhCLENBRGEsRUFFYjtBQUFFRCxFQUFBQSxLQUFLLEVBQUUsT0FBVDtBQUFrQkMsRUFBQUEsSUFBSSxFQUFFO0FBQXhCLENBRmEsRUFHYjtBQUFFRCxFQUFBQSxLQUFLLEVBQUUsUUFBVDtBQUFtQkMsRUFBQUEsSUFBSSxFQUFFO0FBQXpCLENBSGEsRUFJYjtBQUFFRCxFQUFBQSxLQUFLLEVBQUUsTUFBVDtBQUFpQkMsRUFBQUEsSUFBSSxFQUFFO0FBQXZCLENBSmEsQ0FBakI7O0FBT0EsTUFBTUMsYUFBYSxHQUFJQyxLQUFELElBQ2xCO0FBQUssRUFBQSxTQUFTLEVBQUVDLDZCQUFRQyxhQUF4QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxHQUNJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLHNCQUFrQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxHQUFTRixLQUFLLENBQUNHLEtBQU4sQ0FBWUMsT0FBWixDQUFvQixDQUFwQixDQUFULE1BQWxCLENBREosRUFFS1IsUUFBUSxDQUFDUyxHQUFULENBQWFDLElBQUksSUFDZCw2QkFBQyxxQkFBRDtBQUNBLEVBQUEsS0FBSyxFQUFFLE1BQU1OLEtBQUssQ0FBQ08sZUFBTixDQUFzQkQsSUFBSSxDQUFDUixJQUEzQixDQURiO0FBRUEsRUFBQSxPQUFPLEVBQUUsTUFBTUUsS0FBSyxDQUFDUSxnQkFBTixDQUF1QkYsSUFBSSxDQUFDUixJQUE1QixDQUZmO0FBR0EsRUFBQSxRQUFRLEVBQUVFLEtBQUssQ0FBQ1MsUUFBTixDQUFlSCxJQUFJLENBQUNSLElBQXBCLENBSFY7QUFJQSxFQUFBLEdBQUcsRUFBRVEsSUFBSSxDQUFDVCxLQUpWO0FBS0EsRUFBQSxLQUFLLEVBQUVTLElBQUksQ0FBQ1QsS0FMWjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxFQURILENBRkwsRUFVSTtBQUFRLEVBQUEsU0FBUyxFQUFFSSw2QkFBUVMsV0FBM0I7QUFDQSxFQUFBLFFBQVEsRUFBRSxDQUFDVixLQUFLLENBQUNXLFdBRGpCO0FBRUEsRUFBQSxPQUFPLEVBQUVYLEtBQUssQ0FBQ1ksS0FGZjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQVZKLENBREo7O2VBa0JlYixhIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vQnVpbGRDb250cm9scy5tb2R1bGUuc2Nzcyc7XG5pbXBvcnQgQnVpbGRDb250cm9sIGZyb20gJy4vQnVpbGRDb250cm9sL0J1aWxkQ29udHJvbCc7XG5cbmNvbnN0IGNvbnRyb2xzID0gW1xuICAgIHsgbGFiZWw6ICdTYWxhZCcsIHR5cGU6ICdzYWxhZCd9LFxuICAgIHsgbGFiZWw6ICdCYWNvbicsIHR5cGU6ICdiYWNvbid9LFxuICAgIHsgbGFiZWw6ICdDaGVlc2UnLCB0eXBlOiAnY2hlZXNlJ30sXG4gICAgeyBsYWJlbDogJ01lYXQnLCB0eXBlOiAnbWVhdCd9LFxuXVxuXG5jb25zdCBidWlsZENvbnRyb2xzID0gKHByb3BzKSA9PiAoXG4gICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuQnVpbGRDb250cm9sc30+XG4gICAgICAgIDxwPkN1cnJlbnQgUHJpY2U6IDxzdHJvbmc+e3Byb3BzLnByaWNlLnRvRml4ZWQoMil9JDwvc3Ryb25nPjwvcD5cbiAgICAgICAge2NvbnRyb2xzLm1hcChjdHJsID0+KFxuICAgICAgICAgICAgPEJ1aWxkQ29udHJvbCBcbiAgICAgICAgICAgIGFkZGVkPXsoKSA9PiBwcm9wcy5pbmdyZWRpZW50QWRkZWQoY3RybC50eXBlKX1cbiAgICAgICAgICAgIHJlbW92ZWQ9eygpID0+IHByb3BzLmluZ3JlZGllbnRSZW1vdmUoY3RybC50eXBlKX1cbiAgICAgICAgICAgIGRpc2FibGVkPXtwcm9wcy5kaXNhYmxlZFtjdHJsLnR5cGVdfVxuICAgICAgICAgICAga2V5PXtjdHJsLmxhYmVsfSBcbiAgICAgICAgICAgIGxhYmVsPXtjdHJsLmxhYmVsfSAvPlxuICAgICAgICApKX1cbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9e2NsYXNzZXMuT3JkZXJCdXR0b259XG4gICAgICAgIGRpc2FibGVkPXshcHJvcHMucHVyY2hhc2FibGV9XG4gICAgICAgIG9uQ2xpY2s9e3Byb3BzLm9yZGVyfT5PUkRFUiBOT1c8L2J1dHRvbj5cbiAgICA8L2Rpdj5cbik7XG5cblxuZXhwb3J0IGRlZmF1bHQgYnVpbGRDb250cm9sczsiXX0=

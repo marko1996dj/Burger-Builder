@@ -1,0 +1,72 @@
+24ddbf0e4ef3ecfe28a5eedc807d833c
+"use strict";
+
+var _interopRequireWildcard = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _LayoutModule = _interopRequireDefault(require("./Layout.module.scss"));
+
+var _Toolbar = _interopRequireDefault(require("../Navigation/Toolbar/Toolbar"));
+
+var _SideDrawer = _interopRequireDefault(require("../Navigation/SideDrawer/SideDrawer"));
+
+var _jsxFileName = "/home/etontest/burger-builder/src/components/Layout/Layout.js";
+
+class Layout extends _react.Component {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      showSideDrawer: true
+    };
+
+    this.SideDrawerClosedHandler = () => {
+      this.setState({
+        showSideDrawer: false
+      });
+    };
+  }
+
+  render() {
+    return _react.default.createElement(_react.default.Fragment, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, _react.default.createElement(_Toolbar.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }), _react.default.createElement(_SideDrawer.default, {
+      open: this.state.showSideDrawer,
+      closed: this.SideDrawerClosedHandler,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }), _react.default.createElement("main", {
+      className: _LayoutModule.default.Content,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, this.props.children));
+  }
+
+}
+
+var _default = Layout;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkxheW91dC5qcyJdLCJuYW1lcyI6WyJMYXlvdXQiLCJDb21wb25lbnQiLCJzdGF0ZSIsInNob3dTaWRlRHJhd2VyIiwiU2lkZURyYXdlckNsb3NlZEhhbmRsZXIiLCJzZXRTdGF0ZSIsInJlbmRlciIsImNsYXNzZXMiLCJDb250ZW50IiwicHJvcHMiLCJjaGlsZHJlbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7QUFDQTs7OztBQUVBLE1BQU1BLE1BQU4sU0FBcUJDLGdCQUFyQixDQUErQjtBQUFBO0FBQUE7QUFBQSxTQUUzQkMsS0FGMkIsR0FFcEI7QUFDSEMsTUFBQUEsY0FBYyxFQUFFO0FBRGIsS0FGb0I7O0FBQUEsU0FNM0JDLHVCQU4yQixHQU1ELE1BQU07QUFDNUIsV0FBS0MsUUFBTCxDQUFjO0FBQUNGLFFBQUFBLGNBQWMsRUFBRTtBQUFqQixPQUFkO0FBQ0gsS0FSMEI7QUFBQTs7QUFTM0JHLEVBQUFBLE1BQU0sR0FBRTtBQUNKLFdBQ0ksNkJBQUMsY0FBRCxDQUFPLFFBQVA7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDSSw2QkFBQyxnQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxNQURKLEVBRUksNkJBQUMsbUJBQUQ7QUFBWSxNQUFBLElBQUksRUFBRSxLQUFLSixLQUFMLENBQVdDLGNBQTdCO0FBQTZDLE1BQUEsTUFBTSxFQUFFLEtBQUtDLHVCQUExRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxNQUZKLEVBR0k7QUFBTSxNQUFBLFNBQVMsRUFBRUcsc0JBQVFDLE9BQXpCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE9BQ0ssS0FBS0MsS0FBTCxDQUFXQyxRQURoQixDQUhKLENBREo7QUFVSDs7QUFwQjBCOztlQXVCaEJWLE0iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHtDb21wb25lbnR9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vTGF5b3V0Lm1vZHVsZS5zY3NzJztcbmltcG9ydCBUb29sYmFyIGZyb20gJy4uL05hdmlnYXRpb24vVG9vbGJhci9Ub29sYmFyJztcbmltcG9ydCBTaWRlRHJhd2VyIGZyb20gJy4uL05hdmlnYXRpb24vU2lkZURyYXdlci9TaWRlRHJhd2VyJztcblxuY2xhc3MgTGF5b3V0IGV4dGVuZHMgQ29tcG9uZW50IHsgXG5cbiAgICBzdGF0ZSA9e1xuICAgICAgICBzaG93U2lkZURyYXdlcjogdHJ1ZVxuICAgIH1cblxuICAgIFNpZGVEcmF3ZXJDbG9zZWRIYW5kbGVyID0gKCkgPT4ge1xuICAgICAgICB0aGlzLnNldFN0YXRlKHtzaG93U2lkZURyYXdlcjogZmFsc2V9KTtcbiAgICB9XG4gICAgcmVuZGVyKCl7XG4gICAgICAgIHJldHVybihcbiAgICAgICAgICAgIDxSZWFjdC5GcmFnbWVudD5cbiAgICAgICAgICAgICAgICA8VG9vbGJhciAvPlxuICAgICAgICAgICAgICAgIDxTaWRlRHJhd2VyIG9wZW49e3RoaXMuc3RhdGUuc2hvd1NpZGVEcmF3ZXJ9IGNsb3NlZD17dGhpcy5TaWRlRHJhd2VyQ2xvc2VkSGFuZGxlcn0vPlxuICAgICAgICAgICAgICAgIDxtYWluIGNsYXNzTmFtZT17Y2xhc3Nlcy5Db250ZW50fT5cbiAgICAgICAgICAgICAgICAgICAge3RoaXMucHJvcHMuY2hpbGRyZW59XG4gICAgICAgICAgICAgICAgPC9tYWluPlxuICAgICAgIFxuICAgICAgICAgICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgICAgICAgKTtcbiAgICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiXX0=

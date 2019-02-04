@@ -1,0 +1,52 @@
+ca07fb90efaaac95f73a8ba04f33ddf2
+"use strict";
+
+var _interopRequireDefault = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BuildControlModule = _interopRequireDefault(require("./BuildControl.module.scss"));
+
+var _jsxFileName = "/home/etontest/burger-builder/src/components/Burger/BuildControls/BuildControl/BuildControl.js";
+
+const buildControl = props => _react.default.createElement("div", {
+  className: _BuildControlModule.default.BuildControl,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: void 0
+}, _react.default.createElement("div", {
+  className: _BuildControlModule.default.Label,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: void 0
+}, props.label), _react.default.createElement("button", {
+  className: _BuildControlModule.default.Less,
+  onClick: props.removed,
+  disabled: props.disabled,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: void 0
+}, "Less"), _react.default.createElement("button", {
+  className: _BuildControlModule.default.More,
+  onClick: props.added,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: void 0
+}, "More"));
+
+var _default = buildControl;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1aWxkQ29udHJvbC5qcyJdLCJuYW1lcyI6WyJidWlsZENvbnRyb2wiLCJwcm9wcyIsImNsYXNzZXMiLCJCdWlsZENvbnRyb2wiLCJMYWJlbCIsImxhYmVsIiwiTGVzcyIsInJlbW92ZWQiLCJkaXNhYmxlZCIsIk1vcmUiLCJhZGRlZCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBQ0E7Ozs7QUFFQSxNQUFNQSxZQUFZLEdBQUlDLEtBQUQsSUFFYjtBQUFLLEVBQUEsU0FBUyxFQUFFQyw0QkFBUUMsWUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsR0FDSTtBQUNBLEVBQUEsU0FBUyxFQUFFRCw0QkFBUUUsS0FEbkI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsR0FDMkJILEtBQUssQ0FBQ0ksS0FEakMsQ0FESixFQUdJO0FBQ0EsRUFBQSxTQUFTLEVBQUVILDRCQUFRSSxJQURuQjtBQUVBLEVBQUEsT0FBTyxFQUFFTCxLQUFLLENBQUNNLE9BRmY7QUFHQSxFQUFBLFFBQVEsRUFBRU4sS0FBSyxDQUFDTyxRQUhoQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUhKLEVBT0k7QUFDQSxFQUFBLFNBQVMsRUFBRU4sNEJBQVFPLElBRG5CO0FBRUEsRUFBQSxPQUFPLEVBQUVSLEtBQUssQ0FBQ1MsS0FGZjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQVBKLENBRlI7O2VBaUJlVixZIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vQnVpbGRDb250cm9sLm1vZHVsZS5zY3NzJztcblxuY29uc3QgYnVpbGRDb250cm9sID0gKHByb3BzKSA9PiAoXG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuQnVpbGRDb250cm9sfT5cbiAgICAgICAgICAgIDxkaXYgXG4gICAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzZXMuTGFiZWx9Pntwcm9wcy5sYWJlbH08L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b24gXG4gICAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzZXMuTGVzc30gXG4gICAgICAgICAgICBvbkNsaWNrPXtwcm9wcy5yZW1vdmVkfVxuICAgICAgICAgICAgZGlzYWJsZWQ9e3Byb3BzLmRpc2FibGVkfT5MZXNzPC9idXR0b24+XG4gICAgICAgICAgICA8YnV0dG9uIFxuICAgICAgICAgICAgY2xhc3NOYW1lPXtjbGFzc2VzLk1vcmV9IFxuICAgICAgICAgICAgb25DbGljaz17cHJvcHMuYWRkZWR9Pk1vcmU8L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG5cblxuKTtcblxuZXhwb3J0IGRlZmF1bHQgYnVpbGRDb250cm9sOyJdfQ==

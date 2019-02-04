@@ -1,0 +1,29 @@
+72532786365e06405fa6948ed605d10b
+"use strict";
+
+var _interopRequireDefault = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BackdropModule = _interopRequireDefault(require("./Backdrop.module.scss"));
+
+var _jsxFileName = "/home/etontest/burger-builder/src/components/UI/Backdrop/Backdrop.js";
+
+const backdrop = props => props.show ? _react.default.createElement("div", {
+  onClick: props.clicked,
+  className: _BackdropModule.default.Backdrop,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: void 0
+}) : null;
+
+var _default = backdrop;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJhY2tkcm9wLmpzIl0sIm5hbWVzIjpbImJhY2tkcm9wIiwicHJvcHMiLCJzaG93IiwiY2xpY2tlZCIsImNsYXNzZXMiLCJCYWNrZHJvcCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBQ0E7Ozs7QUFFQSxNQUFNQSxRQUFRLEdBQUlDLEtBQUQsSUFDYkEsS0FBSyxDQUFDQyxJQUFOLEdBQVk7QUFDWixFQUFBLE9BQU8sRUFBRUQsS0FBSyxDQUFDRSxPQURIO0FBRVosRUFBQSxTQUFTLEVBQUVDLHdCQUFRQyxRQUZQO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEVBQVosR0FFc0MsSUFIMUM7O2VBTWVMLFEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IGNsYXNzZXMgZnJvbSAnLi9CYWNrZHJvcC5tb2R1bGUuc2Nzcyc7XG5cbmNvbnN0IGJhY2tkcm9wID0gKHByb3BzKSA9PiAoXG4gICAgcHJvcHMuc2hvdz8gPGRpdiBcbiAgICBvbkNsaWNrPXtwcm9wcy5jbGlja2VkfVxuICAgIGNsYXNzTmFtZT17Y2xhc3Nlcy5CYWNrZHJvcH0+PC9kaXY+IDogbnVsbFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgYmFja2Ryb3A7Il19

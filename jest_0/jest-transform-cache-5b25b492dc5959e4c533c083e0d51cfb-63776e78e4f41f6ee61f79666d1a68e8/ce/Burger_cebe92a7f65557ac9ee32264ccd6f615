@@ -1,0 +1,72 @@
+930c80dff6006df979aea9c02d38f564
+"use strict";
+
+var _interopRequireDefault = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BurgerModule = _interopRequireDefault(require("./Burger.module.scss"));
+
+var _BurgerIngredient = _interopRequireDefault(require("./BurgerIngredient/BurgerIngredient"));
+
+var _jsxFileName = "/home/etontest/burger-builder/src/components/Burger/Burger.js";
+
+const Burger = props => {
+  let transformedIngredients = Object.keys(props.ingredients).map(igKey => {
+    return [...Array(props.ingredients[igKey])].map((_, i) => {
+      return _react.default.createElement(_BurgerIngredient.default, {
+        key: igKey + i,
+        type: igKey,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: void 0
+      });
+    });
+  }).reduce((arr, el) => {
+    return arr.concat(el);
+  }, []);
+
+  if (transformedIngredients.length === 0) {
+    transformedIngredients = _react.default.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: void 0
+    }, "Please start adding ingredients!");
+  }
+
+  return _react.default.createElement("div", {
+    className: _BurgerModule.default.Burger,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: void 0
+  }, _react.default.createElement(_BurgerIngredient.default, {
+    type: "bread-top",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: void 0
+  }), transformedIngredients, _react.default.createElement(_BurgerIngredient.default, {
+    type: "bread-bottom",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: void 0
+  }));
+};
+
+var _default = Burger;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1cmdlci5qcyJdLCJuYW1lcyI6WyJCdXJnZXIiLCJwcm9wcyIsInRyYW5zZm9ybWVkSW5ncmVkaWVudHMiLCJPYmplY3QiLCJrZXlzIiwiaW5ncmVkaWVudHMiLCJtYXAiLCJpZ0tleSIsIkFycmF5IiwiXyIsImkiLCJyZWR1Y2UiLCJhcnIiLCJlbCIsImNvbmNhdCIsImxlbmd0aCIsImNsYXNzZXMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOzs7O0FBRUEsTUFBTUEsTUFBTSxHQUFJQyxLQUFELElBQVc7QUFDeEIsTUFBSUMsc0JBQXNCLEdBQUdDLE1BQU0sQ0FBQ0MsSUFBUCxDQUFZSCxLQUFLLENBQUNJLFdBQWxCLEVBQzFCQyxHQUQwQixDQUN0QkMsS0FBSyxJQUFJO0FBQ1osV0FBTyxDQUFDLEdBQUdDLEtBQUssQ0FBQ1AsS0FBSyxDQUFDSSxXQUFOLENBQWtCRSxLQUFsQixDQUFELENBQVQsRUFBcUNELEdBQXJDLENBQXlDLENBQUNHLENBQUQsRUFBSUMsQ0FBSixLQUFVO0FBQ3hELGFBQU8sNkJBQUMseUJBQUQ7QUFBa0IsUUFBQSxHQUFHLEVBQUVILEtBQUssR0FBR0csQ0FBL0I7QUFBa0MsUUFBQSxJQUFJLEVBQUVILEtBQXhDO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBQVA7QUFDRCxLQUZNLENBQVA7QUFHRCxHQUwwQixFQU0xQkksTUFOMEIsQ0FNbkIsQ0FBQ0MsR0FBRCxFQUFNQyxFQUFOLEtBQWE7QUFDbkIsV0FBT0QsR0FBRyxDQUFDRSxNQUFKLENBQVdELEVBQVgsQ0FBUDtBQUNELEdBUjBCLEVBUXhCLEVBUndCLENBQTdCOztBQVNFLE1BQUlYLHNCQUFzQixDQUFDYSxNQUF2QixLQUFrQyxDQUF0QyxFQUF5QztBQUN2Q2IsSUFBQUEsc0JBQXNCLEdBQUc7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsMENBQXpCO0FBQ0Q7O0FBQ0gsU0FDSTtBQUFLLElBQUEsU0FBUyxFQUFFYyxzQkFBUWhCLE1BQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0UsNkJBQUMseUJBQUQ7QUFBa0IsSUFBQSxJQUFJLEVBQUMsV0FBdkI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFERixFQUVHRSxzQkFGSCxFQUdFLDZCQUFDLHlCQUFEO0FBQWtCLElBQUEsSUFBSSxFQUFDLGNBQXZCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBSEYsQ0FESjtBQU9ELENBcEJEOztlQXVCZUYsTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgY2xhc3NlcyBmcm9tICcuL0J1cmdlci5tb2R1bGUuc2Nzcyc7XG5pbXBvcnQgQnVyZ2VySW5ncmVkaWVudCBmcm9tICcuL0J1cmdlckluZ3JlZGllbnQvQnVyZ2VySW5ncmVkaWVudCc7XG5cbmNvbnN0IEJ1cmdlciA9IChwcm9wcykgPT4ge1xuICBsZXQgdHJhbnNmb3JtZWRJbmdyZWRpZW50cyA9IE9iamVjdC5rZXlzKHByb3BzLmluZ3JlZGllbnRzKVxuICAgIC5tYXAoaWdLZXkgPT4ge1xuICAgICAgcmV0dXJuIFsuLi5BcnJheShwcm9wcy5pbmdyZWRpZW50c1tpZ0tleV0pXS5tYXAoKF8sIGkpID0+IHtcbiAgICAgICAgcmV0dXJuIDxCdXJnZXJJbmdyZWRpZW50IGtleT17aWdLZXkgKyBpfSB0eXBlPXtpZ0tleX0gLz47XG4gICAgICB9KTtcbiAgICB9KVxuICAgIC5yZWR1Y2UoKGFyciwgZWwpID0+IHtcbiAgICAgIHJldHVybiBhcnIuY29uY2F0KGVsKTtcbiAgICB9LCBbXSk7XG4gICAgaWYgKHRyYW5zZm9ybWVkSW5ncmVkaWVudHMubGVuZ3RoID09PSAwKSB7XG4gICAgICB0cmFuc2Zvcm1lZEluZ3JlZGllbnRzID0gPHA+UGxlYXNlIHN0YXJ0IGFkZGluZyBpbmdyZWRpZW50cyE8L3A+XG4gICAgfVxuICByZXR1cm4oXG4gICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5CdXJnZXJ9PlxuICAgICAgICA8QnVyZ2VySW5ncmVkaWVudCB0eXBlPVwiYnJlYWQtdG9wXCIgLz5cbiAgICAgICAge3RyYW5zZm9ybWVkSW5ncmVkaWVudHN9XG4gICAgICAgIDxCdXJnZXJJbmdyZWRpZW50IHR5cGU9XCJicmVhZC1ib3R0b21cIiAvPlxuICAgICAgPC9kaXY+XG4gICk7XG59O1xuXG5cbmV4cG9ydCBkZWZhdWx0IEJ1cmdlcjsiXX0=

@@ -1,0 +1,81 @@
+357f7f0c486f091f642c533105cf0619
+"use strict";
+
+var _interopRequireDefault = require("/home/etontest/burger-builder/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Logo = _interopRequireDefault(require("../../Logo/Logo"));
+
+var _NavigationItems = _interopRequireDefault(require("../NavigationItems/NavigationItems"));
+
+var _SideDrawerModule = _interopRequireDefault(require("./SideDrawer.module.scss"));
+
+var _Backdrop = _interopRequireDefault(require("../../UI/Backdrop/Backdrop"));
+
+var _jsxFileName = "/home/etontest/burger-builder/src/components/Navigation/SideDrawer/SideDrawer.js";
+
+const sideDrawer = props => {
+  let attachedClasses = [_SideDrawerModule.default.sideDrawer, _SideDrawerModule.default.Closed];
+
+  if (props.open) {
+    attachedClasses = [_SideDrawerModule.default.SideDrawer, _SideDrawerModule.default.Open];
+  }
+
+  return _react.default.createElement(_react.default.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: void 0
+  }, _react.default.createElement(_Backdrop.default, {
+    show: props.open,
+    clicked: props.closed,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: void 0
+  }), _react.default.createElement("div", {
+    className: attachedClasses.join(' '),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: void 0
+  }, _react.default.createElement("div", {
+    className: _SideDrawerModule.default.Logo,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: void 0
+  }, _react.default.createElement(_Logo.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: void 0
+  })), _react.default.createElement("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: void 0
+  }, _react.default.createElement(_NavigationItems.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: void 0
+  }))));
+};
+
+var _default = sideDrawer;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNpZGVEcmF3ZXIuanMiXSwibmFtZXMiOlsic2lkZURyYXdlciIsInByb3BzIiwiYXR0YWNoZWRDbGFzc2VzIiwiY2xhc3NlcyIsIkNsb3NlZCIsIm9wZW4iLCJTaWRlRHJhd2VyIiwiT3BlbiIsImNsb3NlZCIsImpvaW4iLCJMb2dvIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7OztBQUVBLE1BQU1BLFVBQVUsR0FBSUMsS0FBRCxJQUFXO0FBQzFCLE1BQUlDLGVBQWUsR0FBRyxDQUFDQywwQkFBUUgsVUFBVCxFQUFxQkcsMEJBQVFDLE1BQTdCLENBQXRCOztBQUNBLE1BQUdILEtBQUssQ0FBQ0ksSUFBVCxFQUFjO0FBQ1ZILElBQUFBLGVBQWUsR0FBRyxDQUFDQywwQkFBUUcsVUFBVCxFQUFxQkgsMEJBQVFJLElBQTdCLENBQWxCO0FBQ0g7O0FBQ0QsU0FDSSw2QkFBQyxjQUFELENBQU8sUUFBUDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQUNHLDZCQUFDLGlCQUFEO0FBQVUsSUFBQSxJQUFJLEVBQUVOLEtBQUssQ0FBQ0ksSUFBdEI7QUFBNEIsSUFBQSxPQUFPLEVBQUVKLEtBQUssQ0FBQ08sTUFBM0M7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFESCxFQUVJO0FBQUssSUFBQSxTQUFTLEVBQUVOLGVBQWUsQ0FBQ08sSUFBaEIsQ0FBcUIsR0FBckIsQ0FBaEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDSTtBQUFLLElBQUEsU0FBUyxFQUFFTiwwQkFBUU8sSUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDSSw2QkFBQyxhQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBREosQ0FESixFQUlJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0ksNkJBQUMsd0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFESixDQUpKLENBRkosQ0FESjtBQWFILENBbEJEOztlQW9CZVYsVSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgTG9nbyBmcm9tICcuLi8uLi9Mb2dvL0xvZ28nO1xuaW1wb3J0IE5hdmlnYXRpb25JdGVtcyBmcm9tICcuLi9OYXZpZ2F0aW9uSXRlbXMvTmF2aWdhdGlvbkl0ZW1zJztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vU2lkZURyYXdlci5tb2R1bGUuc2Nzcyc7XG5pbXBvcnQgQmFja2Ryb3AgZnJvbSAnLi4vLi4vVUkvQmFja2Ryb3AvQmFja2Ryb3AnO1xuXG5jb25zdCBzaWRlRHJhd2VyID0gKHByb3BzKSA9PiB7XG4gICAgbGV0IGF0dGFjaGVkQ2xhc3NlcyA9IFtjbGFzc2VzLnNpZGVEcmF3ZXIsIGNsYXNzZXMuQ2xvc2VkXTtcbiAgICBpZihwcm9wcy5vcGVuKXtcbiAgICAgICAgYXR0YWNoZWRDbGFzc2VzID0gW2NsYXNzZXMuU2lkZURyYXdlciwgY2xhc3Nlcy5PcGVuXTtcbiAgICB9XG4gICAgcmV0dXJuIChcbiAgICAgICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgICAgICA8QmFja2Ryb3Agc2hvdz17cHJvcHMub3Blbn0gY2xpY2tlZD17cHJvcHMuY2xvc2VkfS8+IFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2F0dGFjaGVkQ2xhc3Nlcy5qb2luKCcgJyl9PlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLkxvZ299PlxuICAgICAgICAgICAgICAgICAgICA8TG9nbyAvPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxuYXY+XG4gICAgICAgICAgICAgICAgICAgIDxOYXZpZ2F0aW9uSXRlbXMgLz5cbiAgICAgICAgICAgICAgICA8L25hdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBzaWRlRHJhd2VyOyJdfQ==
