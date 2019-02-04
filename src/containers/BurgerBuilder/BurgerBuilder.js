@@ -84,19 +84,20 @@ class BurgerBuilder extends Component {
 			ingredients: this.state.ingredients,
 			price: this.state.totalPrice,
 			customer: {
-				name: 'Marija Marinkov',
+				name: 'Marko Djuric',
 				address: {
-					street: 'Dragise Brasovana 14', 
+					street: 'Vardarska 1x', 
 					zipCode: '21000',
 					country: 'Serbia'
 				},
-				email:'marijamarinkov96@gmail.com'
+				email:'marko96djuric@gmail.com'
 			},
 			deliveryMeyhod: 'fastest'
 		}
 		axios.post('/orders.json', order)
 		.then(response => {
 			this.setState({loading: false, purchasing: false});
+
 		})
 		.catch(error => {
 			this.setState({loading: false, purchasing: false});
